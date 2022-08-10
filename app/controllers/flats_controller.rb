@@ -12,7 +12,7 @@ class FlatsController < ApplicationController
     if @flat.save
       redirect_to flat_path(@flat)
     else
-      render :new, status: :unauthorized
+      render :new, status: :unprocessable_entity
     end
   end
 
