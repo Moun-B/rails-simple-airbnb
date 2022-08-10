@@ -1,21 +1,21 @@
+<div>
+  <%= image_tag @flat.picture_url, class: "banner" %>
+</div>
 <div class="container margin-top-negative">
   <div class="row">
     <div class="col-8">
       <div class="flat-show-card">
         <h1><%= @flat.name %></h1>
-        <p class="flat-show-address">Queen Av</p>
+        <p class="flat-show-address"><%= @flat.address %></p>
       </div>
       <div class="flat-show-card">
         <h3>A bit more about this flat...</h3>
         <p><%= @flat.description %></p>
-        <div class="map" style="background-image: url('https://maps.googleapis.com/maps/api/staticmap?center=Queen Av&amp;zoom=13&amp;scale=2&amp;size=1000x1000&amp;maptype=roadmap&amp;markers=color:red%7CQueen Av&amp;key=AIzaSyAPpx0wk4d-AQ8bhe8-a-ihC7NXLoPElhg')"></div>
       </div>
     </div>
-
     <div class="col-4">
       <div class="flat-show-card">
         <h5>Book this place!</h5>
-
         <form action="">
           <div class="input-group">
             <span class="input-group-text" id="start-date-label">From:</span>
