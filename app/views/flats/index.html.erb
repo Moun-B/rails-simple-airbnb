@@ -14,7 +14,7 @@
   <div class="d-flex gap-4">
       <div>
         <div class="flat-card">
-          <% if flat.picture_url.nil? %>
+          <% if flat.picture_url.nil? || flat.picture_url.empty? %>
            <div>
             <%= image_tag "https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80", class: "flat-card-image" %>
            </div>
